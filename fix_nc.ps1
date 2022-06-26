@@ -23,6 +23,6 @@ $swap_newlines_for_chars_because_powershell_is_cool = $inline -replace '(?m)$', 
 $safe = $pattern.replace($swap_newlines_for_chars_because_powershell_is_cool, "`$1M05`$2", 1)
 
 # Swap back in the newlines from our dirty hack above, yay
-$out = $safe -replace '-n', "`r`n" -replace "(?m)^\s", ""
+$out = @("M3 S0") + $safe -replace '-n', "`r`n" -replace "(?m)^\s", ""
 
 Set-Content -Encoding Ascii -Path $output_path -Value $out
