@@ -34,7 +34,7 @@ which are running the firmware with the mistaken change.
   2. Extract the contents to a folder
 
 ### Usage
-  1. Pass a file to `fix_nc.sh`, e.g. `./fix_nc.sh myFile.nc`
+  1. Pass a file to `fix_nc_mac.sh`, e.g. `./fix_nc_mac.sh myFile.nc`
   2. A "myFile - fixed.nc" will be created in the directory
 
 # CONTRIBUTING
