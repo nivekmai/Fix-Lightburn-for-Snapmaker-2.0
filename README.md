@@ -28,7 +28,16 @@ which are running the firmware with the mistaken change.
 ### Uninstall
   1. Right click on `_Delete Context Menu.bat`, choose "Run as administrator", and agree to the prompt
 
-## Mac/Linux
+## Linux
+### Installation
+  1. Download the folder by going to "Code" > "Download ZIP"
+  2. Extract the contents to a folder
+
+### Usage
+  1. Pass a file to `fix_nc.sh`, e.g. `./fix_nc.sh myFile.nc`
+  2. A "myFile - fixed.nc" will be created in the directory
+  
+## Mac
 ### Installation
   1. Download the folder by going to "Code" > "Download ZIP"
   2. Extract the contents to a folder
