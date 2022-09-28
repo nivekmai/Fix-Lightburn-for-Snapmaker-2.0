@@ -13,13 +13,13 @@ Param(
 
 $output_path = $input_path.replace('.nc','') + ' - fixed.nc'
 
-$inline = ((Get-Content $input_path) -replace 'M05', 'M05 I' | Select-String -Pattern 'M[789]' -NotMatch)
+$inline = ((Get-Content $input_path) -replace 'M05', 'G1 I S0' | Select-String -Pattern 'M[789]' -NotMatch)
 
 # Powershell scripts seem to drop the newlines when using Regex.replace, so temp swap for "-n" that we can swap for real newlines after using regex replace
 $swap_newlines_for_chars_because_powershell_is_cool = $inline -replace '(?m)$', "-n"
 
 # Only regex replace has the ability to replace only one occurence, so we need to use it instead
-[regex]$pattern = "(?ms)(.*)M05 I(.*)"
+[regex]$pattern = "(?ms)(.*)G1 I S0(.*)"
 $safe = $pattern.replace($swap_newlines_for_chars_because_powershell_is_cool, "`$1M05`$2", 1)
 
 # Swap back in the newlines from our dirty hack above, yay
