@@ -1,12 +1,9 @@
 # Fix Lightburn for Snapmaker 2.0
-https://github.com/Snapmaker/Snapmaker2-Controller/commit/12c89a8ee99a712360e08004cfa645c3bc27a841
-
-Was an attempt to fix the firmware to work with inline power settings and the 10W laser.
-However, the code was misread and the commit was made which changes the way that the machine
-expects to get inline power commands.
 
 This script should fix the output file from lightburn to allow for it to run on SnapMaker machines
 which are running the firmware with the mistaken change.
+
+This version uses Skreelink's suggested change to just use `G1 I S0` instead of `M05 I`.
 
 # HOW TO USE
 
