@@ -8,6 +8,8 @@ expects to get inline power commands.
 This script should fix the output file from lightburn to allow for it to run on SnapMaker machines
 which are running the firmware with the mistaken change.
 
+Much of the "code" here is based on the [Send to Snapmaker 2.0 via Wifi](https://forum.snapmaker.com/t/file-transfer-via-wifi/5270/13?u=nivekmai) developed on the forums.
+
 # HOW TO USE
 
 ## Windows
